@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+:root{
+  --color-primary :#083e78;
+  --color-second :#3a95b5;
+  --color-desc :#535353;
+}
+
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  background: white;
+  z-index: 10;
+}
+
+header h2{
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* nav */
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin-right: 30px;
+}
+
+nav ul li a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition: .3s;
+}
+
+nav ul li a.on{
+  color:var(--color-primary) ;
+}
+
+nav ul li a:hover{
+ color:var(--color-primary) ;
+}
+
+/* section home */
+section{
+  padding: 0 10%;
+}
+
+.beranda{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  gap: 30px;
+}
+
+.beranda-text h1{
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: "rubik";
+  margin: 10px 0;
+}
+
+.beranda-text p{
+  color: #555;
+}
+
+.beranda-img{
+  width: 500px;
+  height: 500px;
+}
+
+.beranda-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn{
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 20px;
+  transition: .3s;
+}
+
+.btn a{
+  color: white;
+}
+
+.btn:hover{
+  
+  background: var(--color-second);
+  color: white;
+}
+
+/* jurusan */
+.title{
+  color: var(--color-primary);
+}
+.jurusan-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+.jurusan-container-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  text-align: right;
+  gap: 50px;
+}
+
+
+.jurusan-text img{
+  width: 100px;
+}
+
+.jurusan-text h3{
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.jurusan-text p{
+  color: var(--color-desc);
+}
+
+.jurusan-img{
+  width: 300px;
+}
+
+.jurusan-img img{
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* footer */
+footer{
+  padding: 15px;
+  background: var(--color-primary);
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer p{
+  color: white;
+  font-size:15px ;
+  
+}
+
+
+/* jangan dihiraukan, anggap aja gak ada */
+@media screen and (max-width:720px) {
+  header{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .jurusan-container,
+  .jurusan-container-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .beranda{
+    display: block;
+    height: 80vh;
+    margin-top: 300px;
+    text-align: center;
+  }
+  .title{
+    margin-top: 50px;
+  }
+}

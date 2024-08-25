@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+:root{
+  --color-primary :#083e78;
+  --color-second :#3a95b5;
+  --color-desc :#535353;
+}
+
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between ;
+  background: white;
+  z-index: 10;
+}
+
+header h2{
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* nav */
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav ul li{
+  margin-right: 30px;
+}
+
+nav ul li a{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition: .3s;
+}
+
+nav ul li a.on{
+  color:var(--color-primary) ;
+}
+
+nav ul li a:hover{
+ color:var(--color-second) ;
+}
+
+
+/* about */
+section{
+  padding: 150px 10%;
+}
+
+.about{
+  width: 100%;
+}
+
+.title{
+  margin-top: 15px;
+  color: var(--color-primary);
+}
+
+.about p{
+  margin-top: 10px;
+  line-height: 25px;
+  color: #535353;
+}
+
+.about ul li{
+  list-style-type: square;
+  margin-top: 10px;
+  line-height: 25px;
+  color: #535353;
+}
+
+.about ul li span{
+  font-weight: 600;
+  color: #000000;
+}
+
+/* footer */
+footer{
+  padding: 15px;
+  background: var(--color-primary);
+  text-align: center;
+}
+
+footer p{
+  color: white;
+  font-size:15px ;
+  
+}
+
+/* jangan dihiraukan, anggap aja gak ada */
+@media screen and (max-width:720px) {
+  header{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title{
+    margin-top: 50px;
+  }
+}
