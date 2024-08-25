@@ -128,13 +128,13 @@ section{
 }
 .jurusan-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   margin-top: 50px;
 }
 
 .jurusan-container-2{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   margin-top: 50px;
   text-align: right;
   gap: 50px;
