@@ -130,6 +130,8 @@ section{
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-top: 50px;
+  text-align: left;
+  gap: 50px;
 }
 
 .jurusan-container-2{
